@@ -21,8 +21,10 @@ export class GildedRose {
         if (item.quality > 0) {
             if(item.name === "Conjured Mana Cake")
                 item.quality--;
-            item.quality = item.quality - 1
+            item.quality--;
         }
+
+        item.quality = Math.min(item.quality, 0);
     }
 
     increaseQuality(item: Item) {
@@ -37,6 +39,8 @@ export class GildedRose {
                 }
             }
         }
+
+        item.quality = Math.min(item.quality, 50);
     }
 
     decreaseSellIn(item: Item) {
