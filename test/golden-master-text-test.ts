@@ -22,7 +22,8 @@ describe('Gilded Rose', function () {
             new Item('Conjured Mana Cake', 1, 10)
         ]);
 
-        const items = new GildedRose(gildedRose.updateQuality()).updateQuality();
+        gildedRose.updateQuality();
+        const items = gildedRose.updateQuality();
 
         expect(items).to.deep.equal([
             new Item('Sulfuras, Hand of Ragnaros', 100, 80),
