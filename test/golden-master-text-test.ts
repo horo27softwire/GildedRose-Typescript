@@ -30,14 +30,14 @@ describe('Gilded Rose', function () {
             new Item('Backstage passes to a TAFKAL80ETC concert', 7, 24),
             new Item('Backstage passes to a TAFKAL80ETC concert', 4, 25),
             new Item('Backstage passes to a TAFKAL80ETC concert', 1, 26),
-            new Item('Backstage passes to a TAFKAL80ETC concert', 0, 0),
-            new Item('Aged Brie', 0, 48),
-            new Item('Aged Brie', 0, 50),
+            new Item('Backstage passes to a TAFKAL80ETC concert', -1, 0),
+            new Item('Aged Brie', -1, 48),
+            new Item('Aged Brie', -1, 50),
             new Item('Magic Crow', 12, 28),
             new Item('Magic Crow', 12, 0),
-            new Item('Cow Powder', 0, 21),
+            new Item('Cow Powder', -2, 21),
             new Item('Conjured Tomato', 5, 6),
-            new Item('Conjured Ketchup', 0, 4)
+            new Item('Conjured Ketchup', -1, 4)
         ]);
     });
 
